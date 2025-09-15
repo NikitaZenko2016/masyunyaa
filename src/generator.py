@@ -1,5 +1,5 @@
 import random
-import src.config as cfg
+from src.config.config import config as cfg
 
 def id_from_ping(command):
     return command[0:2] == "<@" and command[-1] == '>'

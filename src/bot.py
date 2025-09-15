@@ -1,6 +1,6 @@
 import disnake
 from disnake.ext import commands
-import src.config as cfg
+from src.config.config import TOKEN, config as cfg
 
 bot = commands.Bot(
         command_prefix='!',
@@ -12,5 +12,4 @@ bot = commands.Bot(
 
 def run_bot():
     import src.commands
-    
-    bot.run(cfg.TOKEN)
+    bot.run(TOKEN)

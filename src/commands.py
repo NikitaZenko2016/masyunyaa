@@ -66,8 +66,7 @@ async def on_button(inter: disnake.MessageInteraction):
     if inter.component.custom_id not in ["yes", "no"]:
         return
     if inter.component.custom_id == "yes":
-        file = disnake.File("C:\\Users\\Losik\\Desktop\\bots\\botix\\image.jpg", filename="image.jpg")
-        await inter.response.send_message("ну факт", file=file)
+        await inter.response.send_message("ну факт")
     elif inter.component.custom_id == "no":
         await inter.response.send_message("ты не прав.")
 
